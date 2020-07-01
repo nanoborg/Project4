@@ -6,7 +6,24 @@
     <title>Timothy Borg</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
-        h1 {
+
+        @import "compass/css3";
+
+        .flash {
+        animation-name: flash;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+
+        @keyframes flash {
+            from {color: purple;}
+            to {color: orange;}
+        }   
+
+        h1, h2 {
             text-align: center;
             font-family: 'Press Start 2P', cursive;
         }
@@ -36,12 +53,16 @@
 </head>
 <body>
     <main>
-        <h1>Resume</h1>
+        <h1>Timothy Borg</h1>
+        <h2 class="flash">Resume</h2>
         <iframe src="./resume.pdf" width="100%" height="700px">
         </iframe>
     </main>
     <footer>
+        <br>
         <a href="index.html">Back Home</a>
+        <br>
+        <br>
     </footer>
 </body>
 </html>

@@ -6,60 +6,145 @@
     <title>Timothy Borg</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
-        body {
-            content: " ";
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 12%, rgba(0, 0, 0, 0.1) 3%), linear-gradient(97deg, rgba(255, 0, 0, 0.05), rgba(0, 255, 0, 0.0), rgba(0, 0, 255, 0.06));
-            z-index: 2;
-            background-size: 100% 7px, 3px 100%;
-        }
-       main {
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-           grid-gap: 10px;
-           width: 80%;
-           margin: auto;
-       }
 
-       h1, h2, a {
-           display: block;
+    @import "compass/css3";
+
+
+    .flash {
+    animation-name: flash;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
+    }
+
+    @keyframes flash {
+        from {color: purple;}
+        to {color: orange;}
+    }   
+
+    body {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 12%, rgba(0, 0, 0, 0.1) 3%), linear-gradient(97deg, rgba(255, 0, 0, 0.05), rgba(0, 255, 0, 0.0), rgba(0, 0, 255, 0.06));
+        z-index: 2;
+        background-size: 100% 7px, 3px 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        width: 60%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, .4);
+        border-radius: 2%;
+        padding: 2%;
+        font-family: Lantinghei sc;
+    }
+
+    h1, h2, a {
+        display: block;
         text-align: center;
         font-family: 'Press Start 2P', cursive;
         text-decoration: none;
-       }
+    }
+
+    .underline {
+        border: 1px black solid;
+    }
+
+    .attributes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     </style>
 </head>
 <body>
-    <header><h1>About Me</h1></header>
-    <h2>Timothy Borg</h2>
+    <header><h1>Timothy Borg</h1></header>
+    <h2 class="flash">About Me</h2>
     <main>
         <section>
-            I am recent graduate from General Assembly.  Having an extensive career in the electrical industry I have developed a passion to pursue coding. I am an ideal candidate who possesses the creative and collaborative problem-solving skills that are essential for the design, development and implementation of complex tech-systems.
+
+            <p>
+                I have grown up with technology all my life. From playing Nintendo to building computers and working in the electrical industry. It's an integral component to my life with audio, video games, movies, photography, phones and the list is growing.
                 <br>
                 <br>
+                Through my previous career as an Electrician, I got the chance to play around with hardware and software which just made me more inquisitive. I started to tear all my electronics at home apart to modify them, to make them more efficient, quieter, cooler, and run home-brew programs that they were not initially intended for. 
+                <br>
+                <br>
+                I would say that's the key interest for me. I like technology because it's creative and it's progressive. It's always changing, there are no limits and that keeps it exciting for me.
+                
+                <div class="underline"></div>
+                <br>
+                I am a recent graduate from General Assembly. In just 3 months of experience with the course I have been able to gain an insight into becoming a fullstack developer.
+                <br>
+                <br>
+                <div class="attributes">
+                    <div>
+                    Skills:
+                    <li>Full stack development</li> 
+                    <li>Version control</li> 
+                    <li>Project deployment</li> 
+                    <li>TDD / Jest / </li> 
+                    <li>Pair programming</li> 
+                    </div>
+                
+                    <div>
+                        Languages:
+                        <li> javaScript </li>
+                        <li> Node </li>
+                        <li> NPM </li>
+                        <li> React </li>
+                        <li> Express </li>
+                        <li> Ruby </li>
+                        <li> Sinatra </li>
+                        <li> PostgreSQL </li>
+                        <li> Git / GitHub </li>
+                        <li> HTML </li>
+                        <li> CSS </li>
+                    </div>
+                </div>
+                <br>
+                <br>
+                I have enjoyed and demonstrated determination by participating in group activities and had roles on various projects, this has created opportunities for me to develop team leadership skills and further my knowledge.
+                <br>
+                <br>
+                <div class="underline"></div>
+            </p>
         </section>
         <section>
             
             <p>
-                So far throughout my course, I have enjoyed and demonstrated determination by participating in group activities and had roles on various projects, this has created opportunities for me to develop team leadership skills and further my knowledge.
 
-                I am devoted to get into this industry, it has long been my dream to learn and grow within a community of motivated and supportive people. I believe REA Group can offer that community that I desire.
+                
+                I am passionate, I am committed to growth and learning of my career in the tech industry. I am inquisitive and persistent which gives me the enthusiasm to further develop the skills required to become a professional developer. 
+                <br>
+                <br>
+                I am welcoming, I have a kind personality that will always be respectful and thoughtful of others. I am very approachable and love getting the opportunity to meet people or work within a team forming friendships throughout a company.  I am trustworthy and transparent. I like to think that I have a positive effect on others and hopefully become part of a supportive network.
+                <br>
+                <br>
+                I am dependable, I feel a sense of belonging when people approach me because they trust in me for advice or they know that they expect a certain level of quality. I am proud of what I create. I feel a great sense of achievement when accomplishing a task, especially when the outcome does not seem clear at the start. It's rewarding to know that my work is appreciated by others.
+                <br>
+                <br>
 
-                I am confident that I possess the skills, knowledge and personality required for the 2021 Graduate Software Development and Engineering program.
+                I am devoted to get into this industry, it has long been a dream to learn and grow within a community of motivated and supportive people.
 
-                I appreciate you taking the time to review my attached Resume and would be extremely pleased to attend an interview at your convenience.
 
-                Thank you for your kind consideration.
+
             </p>
-            
         </section>
         
     </main>
+    <br>
     <a href="index.html">Back Home</a>
+    <br>
 </body>
 </html>

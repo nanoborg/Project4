@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="../public/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
 
     <style>
 
-    *{
+    * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -23,7 +25,11 @@
         display: grid;
 
     }    */
-        
+    @font-face{
+        font-family:'digital-clock-font';
+        src: url('./public/Digital Dismay.otf');
+    }
+
     body {
         /* background-image: url('./wii_menu.png');
         background-repeat: no-repeat;
@@ -57,7 +63,7 @@
         text-decoration: none;
     }   
 
-    .btn-contact {
+    .btn-about-me {
         border-radius: 63%;
         padding: 61px;
         border: rgb(14, 158, 255) 2px solid;
@@ -151,7 +157,6 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 154.5px;
         border-top: rgb(14, 158, 255) 2px solid;
         background-color: rgb(215, 215, 222);
     }
@@ -177,6 +182,12 @@
         height: inherit;
     }
 
+    .date {
+        font-family:'digital-clock-font';
+        font-size: 2rem;
+        color: grey;
+    }
+    
     .glider-track {
         height: inherit;
     }
@@ -219,7 +230,7 @@
             
             <div class="pages">
                 <div class="channel one">
-                    <a class="ch-one" href="https://pages.git.generalassemb.ly/nanoborg/Tic-Tac-Toe/" style="">
+                    <a class="ch-one" href="https://pages.git.generalassemb.ly/nanoborg/Tic-Tac-Toe/">
                     </a>
                 </div>
                 
@@ -281,7 +292,7 @@
         <a class="btn-resume" href="resume.html">Resume</a>
         <div class="date">Date</div>
         
-        <a class="btn-contact" href="about.html">About Me</a>
+        <a class="btn-about-me" href="about.html">About Me</a>
     </footer>
 
     
